@@ -21,14 +21,13 @@ public class MainActivity extends Activity {
         Intent intent;
         if ( button.getId() == R.id.contacts ) {
             intent = new Intent(this, ContactsActivity.class );
-            startActivity( intent );
         }
         else if ( button.getId() == R.id.contactsLoader ) {
-
+            intent = new Intent(this, ContactsLoaderActivity.class );
         }
         else {
-
+            intent = new Intent(this, StudentsActivity.class );
         }
-
+        startActivity( intent );
     }
 }
