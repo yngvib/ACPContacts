@@ -16,5 +16,7 @@
         <activity android:name=".ContactsActivity" android:label="Contacts"/>
         <activity android:name=".ContactsLoaderActivity" android:label="Contacts Loader"/>
         <activity android:name=".StudentsActivity" android:label="Students"/>
+        <provider android:name=".StudentsCP"
+                  android:authorities="com.example.ACPContacts" />
     </application>
 </manifest>
